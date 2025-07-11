@@ -5,8 +5,17 @@ import 'package:nft/core/resourses/app_colors.dart';
 import 'package:nft/core/resourses/app_size.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
-  const CustomBottomNavigationBar({super.key, required this.widthScreen});
+  const CustomBottomNavigationBar({
+    super.key,
+    required this.widthScreen,
+    required this.onHomePressed,
+    required this.onStackedPressed,
+  });
   final double widthScreen;
+
+  final VoidCallback onHomePressed;
+  final VoidCallback onStackedPressed;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -35,8 +44,17 @@ class CustomBottomNavigationBar extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Icon(Icons.home_outlined),
-                      Icon(Icons.stacked_bar_chart),
+                      IconButton(
+                        onPressed: onHomePressed,
+                        icon: Icon(Icons.home_outlined),
+                      ),
+                      IconButton(
+                        onPressed: onStackedPressed,
+                        // () {
+                        //   Navigator.of(context).pushNamed(RouteName.kStatsPage);
+                        // },
+                        icon: Icon(Icons.stacked_bar_chart),
+                      ),
                       Icon(Icons.search),
                       Icon(Icons.person_outline),
                     ],
@@ -46,7 +64,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
             ),
           ),
           Positioned(
-         
+            left: 160,
             top: AppPositionedSize.positionedTop,
             child: Container(
               decoration: ShapeDecoration(

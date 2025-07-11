@@ -20,21 +20,19 @@ artists in the world.''';
   static String titleWave = "Wave";
   static String subtitleWave = "wavepi #5267";
   static String disWave = "0.26";
-    static String subtitleWave2 = "wav2 #5672";
+  static String subtitleWave2 = "wav2 #5672";
   static String disWave2 = "0.018";
   static String hotNewItems = "Hot new items";
-
-
   static String titleMusic = "Music";
   static String subTitleMusic = "mali #7890";
   static String disMusic = "0.46";
-
   static String titleRink = "Ring";
   static String subtitleBall = "Ring #7288";
   static String disRink = "0.106";
-
   static String titleBall = "Ball";
   static String subTitleRink = "baalli #4890";
   static String disBall = "0.03";
-
+  static String stats = "Stats";
+  static String ranking = "Ranking";
+  static String activity = "Activity";
 }

@@ -9,4 +9,6 @@ class AppColors {
   static Color kColorgrey = Color(0xffEBEBF5);
   static Color kMterialButtonColor = Color(0xff97A9F6);
   static Color kHomePageBackground = Color(0xff211134);
+    static Color colorShadow = Color(0xff976dff);
+
 }
