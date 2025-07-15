@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       routes: RouteManager.route,
-      initialRoute: RouteName.kHomePage,
+      initialRoute: RouteName.kOnBoardingPage,
     );
   }
 }

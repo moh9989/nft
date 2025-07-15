@@ -35,4 +35,18 @@ artists in the world.''';
   static String stats = "Stats";
   static String ranking = "Ranking";
   static String activity = "Activity";
+    static String allcategories = " All categories ";
+    static String allChains = " All Chains  ";
+    //stats page
+    static String azumi = "Azumi";
+    static String hapePrime = "Hape prime";
+    static String cryoto = "Cryoto";
+    static String apeclub = "Ape Club";
+    static String bat = "Bat";
+    static String mutant = "Mutant";
+    static String metaverse = "Metaverse";
+    static String mountain = "Mountain";
+    static String mutantApe = "Mutant Ape";
+    static String theSandbox = "TheSandbox";
+
 }
